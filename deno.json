@@ -1,0 +1,6 @@
+{
+  "name": "@jurajstefanic/docsee",
+  "version": "0.0.0",
+  "license": "MIT",
+  "exports": "./docsee.ts"
+}
