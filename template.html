@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>docsee</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div>
+      {{analysis}}
+    </div>
+    <div class="search-container">
+      <input
+        id="search"
+        type="text"
+        placeholder="Search files or folders"
+      />
+    </div>
+    <div id="content">
+      {{content}}
+    </div>
+    <script>
+      const search = document.getElementById("search");
+      const treeContainer = document.getElementById("content");
+
+      search.addEventListener("input", () => {
+        const query = search.value.toLowerCase();
+        const items = treeContainer.querySelectorAll("li");
+
+        items.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(query)) {
+            item.style.display = "";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
