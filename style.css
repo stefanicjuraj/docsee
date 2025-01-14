@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  font-family: "JetBrains Mono", serif;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 32px;
+  /* disable user select */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+h1 {
+  color: white;
+}
+.analysis {
+  border: 1px solid #555;
+  border-radius: 16px;
+  background-color: #1e1e1e;
+  padding: 16px;
+  white-space: pre;
+  width: 40%;
+}
+.search-container {
+  margin: 16px 0;
+}
+.search-container input {
+  width: 40%;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #d4d4d4;
+}
+input:focus {
+  outline: none;
+}
+.tree {
+  list-style: none;
+  padding-left: 24px;
+  position: relative;
+}
+.tree ul {
+  margin-left: 24px;
+}
+.tree li {
+  margin: 4px 0;
+  position: relative;
+  padding-left: 24px;
+}
+.tree li:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 0;
+  border-top: 1px solid #555;
+}
+.tree li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  border-left: 1px solid #555;
+}
+.tree li:last-child:after {
+  display: none;
+}
+.icon {
+  margin-right: 8px;
+}
+a {
+  color: lightgreen;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.green {
+  color: lightgreen;
+}
