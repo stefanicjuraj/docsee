@@ -8,3 +8,5 @@ CLI tool for analyzing repositories and generating an interactive report with a 
 - 📊 **Repository Analysis**
 - 🌐 **Interactive Report**
 - 🔒 **Secure API Integration**
+
+![docsee](./assets/images/docsee.png)
